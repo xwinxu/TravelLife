@@ -1,5 +1,13 @@
-html, body {
+html {
 	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-image: url("Canada1.png");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #center {
@@ -13,6 +21,9 @@ html, body {
 }
 
 #forms {
+	box-shadow: 1px 1px gray;
+	border-radius: 3px;
+	opacity: 0.95;
 	padding: 0;
 	margin-right: auto;
 	margin-left: auto;
