@@ -1,1 +1,11 @@
-/*style*/
+html, body {
+	height: 100%;
+}
+
+#forms{
+	width: 75%;
+}
+
+#forms h2{
+	text-align: center;
+}
