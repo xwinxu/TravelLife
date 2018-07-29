@@ -2,16 +2,46 @@ html, body {
 	height: 100%;
 }
 
-#center{
-	width: 100%;
-	padding-left: 6%;
+#center {
+  padding-left: 5%;
+	width: 620px;
+  font-size: 0.8em;
 }
 
-#forms{
-	width: 70%;
+#center p {
+	font-size: 1.1em;
+}
+
+#forms {
 	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+  width: 500px;
 }
 
-#forms h2{
-	text-align: center;
+#forms h4 {
+  text-align: center;
 }
+
+#center .col-2 {
+	padding: 0;
+	padding-bottom: 5px;
+	margin-right: 26px;
+}
+
+#center .row {
+	padding-left: 15px;
+}
+
+#center .col-2:first-child {
+	margin-right: 0;
+}
+
+#center .col-2:nth-child(2) {
+	margin-right: 14px;
+}
+
+.display-4 {
+	font-size: 2em;
+}
+
