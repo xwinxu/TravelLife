@@ -52,6 +52,10 @@ body {
 	margin-right: 14px;
 }
 
+#navbar {
+	background-color: rgba(223, 223, 223, 0.6);
+}
+
 .display-4 {
 	font-size: 2em;
 }
