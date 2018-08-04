@@ -4,10 +4,15 @@ html {
 
 body {
 	height: 100%;
-	background-image: url("Canada1.png");
-	background-position: center;
-  background-repeat: no-repeat;
+	background: url("Canada1.png") no-repeat center center fixed;
   background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+main {
+	height: 85%;
 }
 
 #center {
@@ -21,6 +26,7 @@ body {
 }
 
 #forms {
+	border: 10px 10px 10px 10px black solid;
 	box-shadow: 1px 1px gray;
 	border-radius: 3px;
 	opacity: 0.95;
@@ -59,4 +65,5 @@ body {
 .display-4 {
 	font-size: 2em;
 }
+
 
