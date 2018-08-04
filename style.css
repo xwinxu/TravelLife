@@ -17,7 +17,7 @@ main {
 
 #center {
   padding-left: 5%;
-	width: 620px;
+	width: 675px;
   font-size: 0.8em;
 }
 
@@ -33,7 +33,7 @@ main {
 	padding: 0;
 	margin-right: auto;
 	margin-left: auto;
-  width: 500px;
+  width: 420px;
 }
 
 #forms h4 {
@@ -43,11 +43,7 @@ main {
 #center .col-2 {
 	padding: 0;
 	padding-bottom: 5px;
-	margin-right: 26px;
-}
-
-#center .row {
-	padding-left: 15px;
+	margin-right: 35px;
 }
 
 #center .col-2:first-child {
@@ -55,7 +51,11 @@ main {
 }
 
 #center .col-2:nth-child(2) {
-	margin-right: 14px;
+	margin-right: 20px;
+}
+
+#center .row {
+	padding-left: 15px;
 }
 
 #navbar {
