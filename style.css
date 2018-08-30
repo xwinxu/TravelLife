@@ -27,7 +27,7 @@ main {
 }
 
 #forms {
-	border: 10px 10px 10px 10px black solid;
+	border: 1px solid gray;
 	box-shadow: 1px 1px gray;
 	border-radius: 3px;
 	opacity: 0.95;
@@ -57,6 +57,10 @@ main {
 
 #center .row {
 	padding-left: 15px;
+}
+
+.nav-link {
+	transition: 0.2s;
 }
 
 .display-4 {

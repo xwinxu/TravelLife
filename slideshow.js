@@ -16,5 +16,5 @@ $(document).ready(function() {
 
   setTimeout(cycle, 5000);
   body.css('backgroundImage', images[0]);
-});
+}); 
 
