@@ -1,0 +1,78 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: url("images/Canada1.png") no-repeat center center fixed;
+  background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	transition: background 0.5s ease-out;
+}
+
+main {
+	height: 85%;
+}
+
+button {
+	font-size: 0.8rem !important;
+}
+
+#age-row input {
+	height: 65%;
+}
+
+#center {
+  padding-left: 5%;
+	width: 675px;
+  font-size: 0.8em;
+}
+
+#center p {
+	font-size: 1.1em;
+}
+
+#forms {
+	border: 1px solid gray;
+	box-shadow: 1px 1px gray;
+	border-radius: 3px;
+	opacity: 0.95;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+  width: 420px;
+}
+
+#forms h4 {
+  text-align: center;
+}
+
+#center .col-2 {
+	padding: 0;
+	padding-bottom: 5px;
+	margin-right: 35px;
+}
+
+#center .col-2:first-child {
+	margin-right: 0;
+}
+
+#center .col-2:nth-child(2) {
+	margin-right: 20px;
+}
+
+#center .row {
+	padding-left: 15px;
+}
+
+.nav-link {
+	transition: 0.2s;
+}
+
+.display-4 {
+	font-size: 2em;
+}
+
+
