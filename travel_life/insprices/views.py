@@ -64,25 +64,25 @@ def prices(request):
     request.session['end_month'] = request.GET.get('end[1]', '')
     request.session['end_year'] = request.GET.get('end[2]', '')
 
-    alli_nomed_plans = AlliplanNomed.objects.all()
-    alli_med_plans = AlliplanMed.objects.all()
-    berk_nomed_plans = BerkplanNomed.objects.all()
-    berk_med_plans = BerkplanMed.objects.all()
-    manu_nomed_plans = ManuplanNomed.objects.all()
-    manu_med_plans = ManuplanMed.objects.all()
-    tic_nomed_plans = TicplanNomed.objects.all()
-    tic_med_plans = TicplanMed.objects.all()
+    # alli_nomed_plans = AlliplanNomed.objects.all()
+    # alli_med_plans = AlliplanMed.objects.all()
+    # berk_nomed_plans = BerkplanNomed.objects.all()
+    # berk_med_plans = BerkplanMed.objects.all()
+    # manu_nomed_plans = ManuplanNomed.objects.all()
+    # manu_med_plans = ManuplanMed.objects.all()
+    # tic_nomed_plans = TicplanNomed.objects.all()
+    # tic_med_plans = TicplanMed.objects.all()
 
-    context = {
-        'alli_nomed_plans': alli_nomed_plans,
-        'alli_med_plans': alli_med_plans,
-        'berk_nomed_plans': berk_nomed_plans,
-        'berk_med_plans': berk_med_plans,
-        'manu_nomed_plans': manu_nomed_plans,
-        'manu_med_plans': manu_med_plans,
-        'tic_nomed_plans': tic_nomed_plans,
-        'tic_med_plans': tic_med_plans,
-    }
+    # context = {
+    #     'alli_nomed_plans': alli_nomed_plans,
+    #     'alli_med_plans': alli_med_plans,
+    #     'berk_nomed_plans': berk_nomed_plans,
+    #     'berk_med_plans': berk_med_plans,
+    #     'manu_nomed_plans': manu_nomed_plans,
+    #     'manu_med_plans': manu_med_plans,
+    #     'tic_nomed_plans': tic_nomed_plans,
+    #     'tic_med_plans': tic_med_plans,
+    # }
 
     return HttpResponseRedirect(reverse('insprices:results'))
 
@@ -120,7 +120,7 @@ def results(request):
     start_date = datetime.date(int(start[0]), int(start[1]), int(start[2]))
     end_date = datetime.date(int(end[0]), int(end[1]), int(end[2]))
 
-    duration = (end_date - start_date).days
+    # duration = (end_date - start_date).days
 
     alli_nomed_plans = AlliplanNomed.objects.all()
     alli_med_plans = AlliplanMed.objects.all()
@@ -155,3 +155,5 @@ def results(request):
     }
 
     return render(request, 'insprices/results.html', context)
+
+def 

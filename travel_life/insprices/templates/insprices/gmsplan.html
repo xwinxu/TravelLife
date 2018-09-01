@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <meta charset ="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<title>Travel Life</title>
+	<link rel="icon" href="" type="image/png">
+</head>
+
+<body>
+    <main>
+      <div class="table-responsive">
+        <table class="table">
+            <h1>Stable Medical Coverage</h1>
+            <thead>
+                <tr>
+                <th>
+                    <p>Age</p>
+                </th>
+                <th>
+                    <p>$10,000 Coverage</p>
+                </th>
+                <th>
+                    <p>$25,000 Coverage</p>
+                </th>
+                <th>
+                    <p>$50,000 Coverage</p>
+                </th>
+                <th>
+                    <p>$100,000 Coverage</p>
+                </th>
+                <th>
+                    <p>$150,000 Coverage</p>
+                </th>
+                </tr>
+            </thead>
+            <tbody>
+                    {% for entry in alli_med_plans %}
+                      <tr>
+                        <td>
+                          <p>{{entry.age_from}}—{{entry.age_to}}</p>
+                        </td>
+                        <td>
+                          <p>{{entry.cov_10k}}</p>
+                        </td>
+                        <td>
+                          <p>{{entry.cov_25k}}</p>
+                        </td>
+                        <td>
+                          <p>{{entry.cov_50k}}</p>
+                        </td>
+                        <td>
+                          <p>{{entry.cov_100k}}</p>
+                        </td>
+                        <td>
+                          <p>{{entry.cov_150k}}</p>
+                        </td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+
+            <hr>
+
+        <div class="table-responsive">
+            <table class="table">
+                <h1>No Medical Coverage</h1>
+                <thead>
+                <tr>
+                    <th>
+                    <p>Age</p>
+                    </th>
+                    <th>
+                    <p>$10,000 Coverage</p>
+                    </th>
+                    <th>
+                    <p>$25,000 Coverage</p>
+                    </th>
+                    <th>
+                    <p>$50,000 Coverage</p>
+                    </th>
+                    <th>
+                    <p>$100,000 Coverage</p>
+                    </th>
+                    <th>
+                    <p>$150,000 Coverage</p>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for entry in alli_nomed_plans %}
+                    <tr>
+                    <td>
+                        <p>{{entry.age_from}}—{{entry.age_to}}</p>
+                    </td>
+                    <td>
+                        <p>{{entry.cov_10k}}</p>
+                    </td>
+                    <td>
+                        <p>{{entry.cov_25k}}</p>
+                    </td>
+                    <td>
+                        <p>{{entry.cov_50k}}</p>
+                    </td>
+                    <td>
+                        <p>{{entry.cov_100k}}</p>
+                    </td>
+                    <td>
+                        <p>{{entry.cov_150k}}</p>
+                    </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            </div>
+        </main>
+    </body>
+ </html>

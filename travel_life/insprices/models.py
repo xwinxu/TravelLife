@@ -145,3 +145,98 @@ class TicplanNomed(models.Model):
 
     class Meta:
         db_table = 'ticplan_nomed'
+
+class GMSplanMed(models.Model):
+    age_from = models.PositiveIntegerField()
+    age_to = models.PositiveIntegerField()
+    cov_25k = models.FloatField(blank=True, null=True)
+    cov_50k = models.FloatField(blank=True, null=True)
+    cov_100k = models.FloatField(blank=True, null=True)
+    cov_150k = models.FloatField(blank=True, null=True)
+    plan_id = models.AutoField(primary_key=True)
+
+    def __str__(self):
+        return "Age: " + str(self.age_from) + " - " + str(self.age_to)
+    
+    class Meta:
+        db_table = 'gmsplan_med'
+
+class TugoplanMed(models.Model):
+    age_from = models.PositiveIntegerField()
+    age_to = models.PositiveIntegerField()
+    cov_10k = models.FloatField(blank=True, null=True)
+    cov_20k = models.FloatField(blank=True, null=True)
+    cov_30k = models.FloatField(blank=True, null=True)
+    cov_40k = models.FloatField(blank=True, null=True)
+    cov_50k = models.FloatField(blank=True, null=True)
+    cov_60k = models.FloatField(blank=True, null=True)
+    cov_80k = models.FloatField(blank=True, null=True)
+    cov_100k = models.FloatField(blank=True, null=True)
+    cov_150k = models.FloatField(blank=True, null=True)
+    cov_200k = models.FloatField(blank=True, null=True)
+    cov_250k = models.FloatField(blank=True, null=True)
+    cov_300k = models.FloatField(blank=True, null=True)
+    plan_id = models.AutoField(primary_key=True)
+
+    def __str__(self):
+        return "Age: " + str(self.age_from) + " - " + str(self.age_to)
+    
+    class Meta:
+        db_table = 'tugoplan_med'
+
+class TugoplanNomed(models.Model):
+    age_from = models.PositiveIntegerField()
+    age_to = models.PositiveIntegerField()
+    cov_10k = models.FloatField(blank=True, null=True)
+    cov_20k = models.FloatField(blank=True, null=True)
+    cov_30k = models.FloatField(blank=True, null=True)
+    cov_40k = models.FloatField(blank=True, null=True)
+    cov_50k = models.FloatField(blank=True, null=True)
+    cov_60k = models.FloatField(blank=True, null=True)
+    cov_80k = models.FloatField(blank=True, null=True)
+    cov_100k = models.FloatField(blank=True, null=True)
+    cov_150k = models.FloatField(blank=True, null=True)
+    cov_200k = models.FloatField(blank=True, null=True)
+    cov_250k = models.FloatField(blank=True, null=True)
+    cov_300k = models.FloatField(blank=True, null=True)
+    plan_id = models.AutoField(primary_key=True)
+
+    def __str__(self):
+        return "Age: " + str(self.age_from) + " - " + str(self.age_to)
+    
+    class Meta:
+        db_table = 'tugoplan_nomed'
+
+class Tfirstplan_nomed(models.Model):
+    age_from = models.PositiveIntegerField()
+    age_to = models.PositiveIntegerField()
+    cov_10k = models.FloatField(blank=True, null=True)
+    cov_15k = models.FloatField(blank=True, null=True)
+    cov_25k = models.FloatField(blank=True, null=True)
+    cov_50k = models.FloatField(blank=True, null=True)
+    cov_100k = models.FloatField(blank=True, null=True)
+    cov_150k = models.FloatField(blank=True, null=True)
+    plan_id = models.AutoField(primary_key=True)
+
+    def __str__(self):
+        return "Age: " + str(self.age_from) + " - " + str(self.age_to)
+    
+    class Meta:
+        db_table = 'tfirstplan_nomed'
+
+class Tfirstplan_med(models.Model):
+    age_from = models.PositiveIntegerField()
+    age_to = models.PositiveIntegerField()
+    cov_10k = models.FloatField(blank=True, null=True)
+    cov_15k = models.FloatField(blank=True, null=True)
+    cov_25k = models.FloatField(blank=True, null=True)
+    cov_50k = models.FloatField(blank=True, null=True)
+    cov_100k = models.FloatField(blank=True, null=True)
+    cov_150k = models.FloatField(blank=True, null=True)
+    plan_id = models.AutoField(primary_key=True)
+
+    def __str__(self):
+        return "Age: " + str(self.age_from) + " - " + str(self.age_to)
+    
+    class Meta:
+        db_table = 'tfirstplan_med'
