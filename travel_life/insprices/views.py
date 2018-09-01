@@ -156,4 +156,11 @@ def results(request):
 
     return render(request, 'insprices/results.html', context)
 
-def 
+def about(request):
+    return HttpResponse(render(request, 'insprices/about.html'))
+
+def faq(request):
+    return HttpResponse(render(request, 'insprices/faq.html'))
+
+def contact(request):
+    return HttpResponse(render(request, 'insprices/contact.html'))
