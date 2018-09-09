@@ -15,3 +15,126 @@
 	<link rel="icon" href="" type="image/png">
 </head>
 
+<body>
+  <main>
+    <div class="table-responsive">
+      <table class="table">
+        <h1>Stable Medical Coverage</h1>
+        <thead>
+          <tr>
+            <th>
+              <p>Age</p>
+            </th>
+            <th>
+              <p>$10,000 Coverage</p>
+            </th>
+            <th>
+              <p>$15,000 Coverage</p>
+            </th>
+            <th>
+              <p>$25,000 Coverage</p>
+            </th>
+            <th>
+              <p>$50,000 Coverage</p>
+            </th>
+            <th>
+              <p>$100,000 Coverage</p>
+            </th>
+            <th>
+              <p>$150,000 Coverage</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for entry in tfirst_med_plans %}
+            <tr>
+              <td>
+                <p>{{entry.age_from}}—{{entry.age_to}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_10k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_15k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_25k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_50k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_100k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_150k}}</p>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="table-responsive">
+      <table class="table">
+        <h1>No Medical Coverage</h1>
+        <thead>
+          <tr>
+            <th>
+              <p>Age</p>
+            </th>
+            <th>
+              <p>$10,000 Coverage</p>
+            </th>
+            <th>
+              <p>$15,000 Coverage</p>
+            </th>
+            <th>
+              <p>$25,000 Coverage</p>
+            </th>
+            <th>
+              <p>$50,000 Coverage</p>
+            </th>
+            <th>
+              <p>$100,000 Coverage</p>
+            </th>
+            <th>
+              <p>$150,000 Coverage</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for entry in tfirst_nomed_plans %}
+            <tr>
+              <td>
+                <p>{{entry.age_from}}—{{entry.age_to}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_10k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_15k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_25k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_50k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_100k}}</p>
+              </td>
+              <td>
+                <p>{{entry.cov_150k}}</p>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
+

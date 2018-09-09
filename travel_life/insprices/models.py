@@ -157,9 +157,24 @@ class GMSplanMed(models.Model):
 
     def __str__(self):
         return "Age: " + str(self.age_from) + " - " + str(self.age_to)
-    
+
     class Meta:
         db_table = 'gmsplan_med'
+
+class GMSplanNomed(models.Model):
+    age_from = models.PositiveIntegerField()
+    age_to = models.PositiveIntegerField()
+    cov_25k = models.FloatField(blank=True, null=True)
+    cov_50k = models.FloatField(blank=True, null=True)
+    cov_100k = models.FloatField(blank=True, null=True)
+    cov_150k = models.FloatField(blank=True, null=True)
+    plan_id = models.AutoField(primary_key=True)
+
+    def __str__(self):
+        return "Age: " + str(self.age_from) + " - " + str(self.age_to)
+
+    class Meta:
+        db_table = 'gmsplan_nomed'
 
 class TugoplanMed(models.Model):
     age_from = models.PositiveIntegerField()
@@ -180,7 +195,7 @@ class TugoplanMed(models.Model):
 
     def __str__(self):
         return "Age: " + str(self.age_from) + " - " + str(self.age_to)
-    
+
     class Meta:
         db_table = 'tugoplan_med'
 
@@ -203,11 +218,11 @@ class TugoplanNomed(models.Model):
 
     def __str__(self):
         return "Age: " + str(self.age_from) + " - " + str(self.age_to)
-    
+
     class Meta:
         db_table = 'tugoplan_nomed'
 
-class Tfirstplan_nomed(models.Model):
+class TfirstplanNomed(models.Model):
     age_from = models.PositiveIntegerField()
     age_to = models.PositiveIntegerField()
     cov_10k = models.FloatField(blank=True, null=True)
@@ -220,11 +235,11 @@ class Tfirstplan_nomed(models.Model):
 
     def __str__(self):
         return "Age: " + str(self.age_from) + " - " + str(self.age_to)
-    
+
     class Meta:
         db_table = 'tfirstplan_nomed'
 
-class Tfirstplan_med(models.Model):
+class TfirstplanMed(models.Model):
     age_from = models.PositiveIntegerField()
     age_to = models.PositiveIntegerField()
     cov_10k = models.FloatField(blank=True, null=True)
@@ -237,6 +252,6 @@ class Tfirstplan_med(models.Model):
 
     def __str__(self):
         return "Age: " + str(self.age_from) + " - " + str(self.age_to)
-    
+
     class Meta:
         db_table = 'tfirstplan_med'

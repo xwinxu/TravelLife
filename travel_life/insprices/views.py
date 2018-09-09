@@ -54,6 +54,39 @@ def manuplan(request):
     return HttpResponse(render(request, 'insprices/manuplan.html', context))
 
 
+def twenfirstplan(request):
+    tfirst_med_plans = TfirstplanMed.objects.order_by('age_from')
+    tfirst_nomed_plans = TfirstplanNomed.objects.order_by('age_from')
+    context = {
+        'tfirst_med_plans': tfirst_med_plans,
+        'tfirst_nomed_plans': tfirst_nomed_plans,
+    }
+
+    return HttpResponse(render(request, 'insprices/twenfirstplan.html', context))
+
+
+def gmsplan(request):
+    gms_med_plans = GMSplanMed.objects.order_by('age_from')
+    gms_nomed_plans = GMSplanNomed.objects.order_by('age_from')
+    context = {
+        'gms_med_plans': gms_med_plans,
+        'gms_nomed_plans': gms_nomed_plans,
+    }
+
+    return HttpResponse(render(request, 'insprices/gmsplan.html', context))
+
+
+def tugoplan(request):
+    tugo_med_plans = TugoplanMed.objects.order_by('age_from')
+    tugo_nomed_plans = TugoplanNomed.objects.order_by('age_from')
+    context = {
+        'tugo_med_plans': tugo_med_plans,
+        'tugo_nomed_plans': tugo_nomed_plans,
+    }
+
+    return HttpResponse(render(request, 'insprices/tugoplan.html', context))
+
+
 def prices(request):
     request.session['age'] = request.GET.get('age', '')
     request.session['coverage'] = request.GET.get('coverage', '')
